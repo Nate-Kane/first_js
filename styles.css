@@ -1,0 +1,22 @@
+body {
+  background-color: seashell;
+}
+
+h1 {
+  text-align: center;
+  color: firebrick;
+}
+
+div {
+  text-align: center;
+}
+
+.guitars {
+  font-size: 1.5em;
+}
+
+.addGuitar {
+  font-size: 1.3em;
+  color: blue;
+}
+
