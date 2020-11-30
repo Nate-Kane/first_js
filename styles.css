@@ -18,5 +18,19 @@ div {
 .addGuitar {
   font-size: 1.3em;
   color: blue;
+  background-color: seashell;
 }
 
+button {
+  background-color: blue;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 12px;
+}
+
+button:hover {
+  border: none;
+  border-radius: 12px;
+  opacity: 0.6;
+}

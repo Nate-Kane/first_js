@@ -16,12 +16,14 @@ function renderGuitars() {
     guitarStr += `
     <div>
       <div class="guitars">
-      ${guitar.year} ${guitar.brand} ${guitar.model} for $${guitar.price} 
+      ${guitar.year} ${guitar.brand} ${guitar.model} &ensp;-&ensp; $${guitar.price}
       </div>
      <br/>
-    <span data-index='${index}' onclick='updateGuitar(this)' >Update</span>
-    <span onclick='sellGuitar(${index})'>Sold</span>
-    <hr/>
+      <div class="buttons">
+        <button class="buttons" data-index='${index}' onclick='updateGuitar(this)' >Update</button>
+        <button class="buttons" onclick='sellGuitar(${index})'>Sold</button>
+      </div>
+    <hr size="2" width="500" align="center" color="darkslategray" />
     </div>`;
  });
  return guitarStr;
@@ -82,7 +84,7 @@ function addGuitar() {
 function render() {
   htmlString = `<div>
                   <h1>${state.pageHeader}</h1>
-                  <div onclick='addGuitar()' class="addGuitar">Add a guitar</div>
+                  <button onclick='addGuitar()' class="addGuitar">Add a guitar</button>
                   <br/>
                   ${renderGuitars()}
                   </div>`;
